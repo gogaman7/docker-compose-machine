@@ -1,6 +1,6 @@
 FROM ubuntu:16.10
 
-MAINTAINER Greg Keys <gregkeys@gmail.com>
+MAINTAINER Igor Belayev <gogaspam1@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV DOCKER_MACHINE 0.8.2
