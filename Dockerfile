@@ -1,10 +1,10 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.10
 
 MAINTAINER Greg Keys <gregkeys@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV DOCKER_MACHINE 0.7.0
-ENV DOCKER_COMPOSE 1.7.1
+ENV DOCKER_MACHINE 0.8.2
+ENV DOCKER_COMPOSE 1.9.0
 
 # Install system packages
 RUN apt-get update -q \
