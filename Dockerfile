@@ -18,8 +18,8 @@ RUN apt-get update -q \
     && chmod +x /usr/local/bin/docker-compose
 
 # Installing docker client only, removing dockerd, since we don't need it and there is no docker client build yet
- RUN mkdir -p /tmp/download && \
-  curl -L https://get.docker.com/builds/Linux/x86_64/docker-${DOCKER_VERSION}.tgz | tar -xz -C /tmp/download && \
-  rm -rf /tmp/download/docker/dockerd && \
-  mv /tmp/download/docker/docker* /usr/local/bin/ && \
-  rm -rf /tmp/download
+RUN mkdir -p /tmp/download && \
+     curl -L https://test.docker.com/builds/Linux/x86_64/docker-${DOCKER_VERSION}.tgz | tar -xz -C /tmp/download && \
+     rm -rf /tmp/download/docker/dockerd && \
+     mv /tmp/download/docker/docker* /usr/local/bin/ && \
+     rm -rf /tmp/download
