@@ -3,9 +3,10 @@ FROM ubuntu:16.10
 MAINTAINER Igor Belayev <gogaspam1@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV DOCKER_MACHINE 0.8.2
-ENV DOCKER_COMPOSE 1.9.0
-ENV DOCKER_VERSION=17.05.0-ce-rc1
+ENV DOCKER_MACHINE 0.12.0-rc2
+ENV DOCKER_COMPOSE 1.14.0
+# ENV DOCKER_VERSION 17.06.0-ce-rc5
+ENV DOCKER_VERSION 17.05.0-ce-rc1
 
 # Install system packages
 RUN apt-get update -q \
